@@ -14,6 +14,7 @@ public class Perro {
     private String edad;
     private String tamanio;
     private String color;
+    private String salud;
     //*************************************************************************
     //Constructores
     //*************************************************************************
@@ -23,6 +24,7 @@ public class Perro {
         this.edad = edad;
         this.tamanio = tamanio;
         this.color = color;
+        this.salud = salud;
     }
     
     //*************************************************************************
@@ -50,6 +52,10 @@ public class Perro {
 
     public String getColor(){
         return color;
+    }
+
+    public String getSalud(){
+        return salud;
     }
     
     
