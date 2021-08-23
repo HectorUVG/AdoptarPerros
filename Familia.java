@@ -1,3 +1,9 @@
+/**
+ * @author Hector de Leon
+ * @version 22/08/21
+ * 
+ *  */  
+
 //*****************************************************************************
 //Imports
 //*****************************************************************************
@@ -10,7 +16,7 @@ public class Familia {
     //Declaracion de variables
     //*************************************************************************
     /*aqui se guardan los perros y sus caracteristicas. La idea es que en el 
-    primer [] se encuentra el eje y y en el segundo el eje x. cada fila sera
+    primer [] se encuentra el eje y y en el segundo el eje x. cada fila(x) sera
     un perro con cada una de sus caracteristicas, y la siguiente fila 
     representa otro perro.
     */
@@ -18,8 +24,27 @@ public class Familia {
     //*************************************************************************
     //Constructores
     //*************************************************************************
-    public Familia(){
-        this.perroFam = perroFam;
+
+    //con este constructor es posible colocar a cada perro con sus caracteristicas dentro
+    //de un arreglo
+    /**
+     * 
+     * @param y
+     * @param nombre
+     * @param tamanio
+     * @param raza
+     * @param edad
+     * @param color
+     * @param salud
+     */
+    public Familia(int y, String nombre, String tamanio, String raza, String edad, String color, String salud){
+        this.perroFam[0][y] = nombre;
+        this.perroFam[1][y] = tamanio;
+        this.perroFam[2][y] = raza;
+        this.perroFam[3][y] = edad;
+        this.perroFam[4][y] = color;
+        this.perroFam[5][y] = salud;
+
     }
     //*************************************************************************
     //Metodos

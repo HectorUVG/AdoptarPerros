@@ -1,3 +1,9 @@
+/**
+ * @author Hector de Leon
+ * @version 22/08/21
+ * 
+ *  */  
+
 //*****************************************************************************
 //Imports
 //*****************************************************************************
@@ -18,15 +24,28 @@ public class Perro {
     //*************************************************************************
     //Constructores
     //*************************************************************************
-    public Perro(String nombrePerro, String raza, String edad){
+    /**
+     * 
+     * @param nombrePerro
+     * @param tamanio
+     * @param raza
+     * @param edad
+     * @param color
+     * @param salud
+     */
+    public Perro(String nombrePerro, String tamanio, String raza, String edad, String color, String salud){
         this.nombrePerro = nombrePerro;
+        this.tamanio = tamanio;
         this.raza = raza;
         this.edad = edad;
-        this.tamanio = tamanio;
         this.color = color;
         this.salud = salud;
     }
     
+    
+    /** 
+     * @return String
+     */
     //*************************************************************************
     //Metodos
     //*************************************************************************
@@ -38,22 +57,42 @@ public class Perro {
         return nombrePerro;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getRaza(){
         return raza;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getEdad(){
         return edad;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getTamanio(){
         return tamanio;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getColor(){
         return color;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getSalud(){
         return salud;
     }
